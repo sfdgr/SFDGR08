@@ -1,57 +1,24 @@
 @isTest
 private class rookiesNo5Test {
 
-	static testMethod void Test_getSufficientAccounts_false_01() {
+	@isTest
+	static void successTest() {
 
-		boolean result = false;
-		List<Account> accountList = new List<Account>();
+		RookiesNo5.createAccount('平成株式会社')
 
-		// 0件ならfalse
-		result = rookiesNo5_TestDataFactory.getSufficientAccounts(accountList);
-		System.assertEquals(false, result);
-
+		Account[] results [SELECT Id FROM Account Name = '平成株式会社'];
+		System.assert(results.size() >= 1);
 	}
 
-	static testMethod void Test_getSufficientAccounts_false_02() {
+	@isTest
+	static void errorTest() {
 
-		boolean result = false;
-		List<Account> accountList = new List<Account>();
-
-		// メソッドを呼び出すが、0件で指定
-		accountList = TestDataFactory.createAccounts(0);
-		Insert accountList;
-
-		result = rookiesNo5_TestDataFactory.getSufficientAccounts(accountList);
-		System.assertEquals(false, result);
-
-	}
-
-	static testMethod void Test_getSufficientAccounts_false_03() {
-
-		boolean result = false;
-		List<Account> accountList = new List<Account>();
-
-		// 境界値・無効値
-		accountList = TestDataFactory.createAccounts(500);
-		Insert accountList;
-
-		result = rookiesNo5_TestDataFactory.getSufficientAccounts(accountList);
-		System.assertEquals(false, result);
-
-	}
-
-	static testMethod void Test_getSufficientAccounts_true() {
-
-		boolean result = false;
-		List<Account> accountList = new List<Account>();
-
-		// 境界値・有効値
-		accountList = TestDataFactory.createAccounts(501);
-		Insert accountList;
-
-		result = rookiesNo5_TestDataFactory.getSufficientAccounts(accountList);
-		System.assertEquals(true, result);
-
+		try{
+			RookiesNo5.createAccount('')
+		} catch(DmlException de){
+			return;
+		}
+		System.assert(true);
 	}
 
 }
