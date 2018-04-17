@@ -1,6 +1,6 @@
 public class rookiesNo2Test {
 
-	static testMethod void Test_digitCheck_nonprompt() {
+    static testMethod void Test_digitCheck_nonprompt() {
 
 		boolean result = false;
 
@@ -20,8 +20,20 @@ public class rookiesNo2Test {
 		result = rookiesNo1.digitCheck(11);
 		System.assertEquals(false, result);
 
-		// Exception
-		result = rookiesNo1.digitCheck('test');
+	}
+    static testMethod void Test_digitCheck_exception() {
+
+		boolean result = false;
+
+		try{
+
+			// assertException
+			result = rookiesNo1.digitCheck(11);
+			System.assertEquals(true, result);
+		
+		}catch(Exception e){
+			//エラーでもスルーしたいけどダメ
+		}
 
 	}
 
