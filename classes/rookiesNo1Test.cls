@@ -1,7 +1,7 @@
 @isTest
 private class rookiesNo1Test {
 
-	static testMethod void Test_digitCheck_nonprompt() {
+	static void Test_digitCheck_nonprompt() {
 
 		rookiesNo1.digitCheck(0);
 		rookiesNo1.digitCheck(9);

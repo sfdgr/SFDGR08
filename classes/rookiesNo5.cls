@@ -4,4 +4,5 @@ public with sharing class rookiesNo5 {
 		Account acc = new Account(Name = nm);
 		insert acc;
 	}
+
 }

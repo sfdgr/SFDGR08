@@ -1,4 +1,4 @@
-public with sharing class rookiesNo5 {
+public with sharing class rookiesNo6 {
 
     public static boolean getSufficientAccounts(List<Account> accounts) {
         if (accounts.size() > 500) {

@@ -1,15 +1,14 @@
 @isTest
 private class rookiesNo4Test {
 
-	static testMethod void Test_getAccountById_blank() {
+	static void Test_getAccountById_blank() {
 
 		Account targetAccount = null;
 		targetAccount = rookiesNo3.getAccountById(null);
 
 	}
 
-
-	static testMethod void Test_getAccountById_isNotBlank() {
+	static void Test_getAccountById_isNotBlank() {
 
 		Account targetAccount = null;
 

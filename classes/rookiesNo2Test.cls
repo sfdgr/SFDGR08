@@ -1,6 +1,7 @@
-public class rookiesNo2Test {
+@isTest
+private class rookiesNo2Test {
 
-    static testMethod void Test_digitCheck_nonprompt() {
+    static void Test_digitCheck_nonprompt() {
 
 		boolean result = false;
 
@@ -21,7 +22,8 @@ public class rookiesNo2Test {
 		System.assertEquals(false, result);
 
 	}
-    static testMethod void Test_digitCheck_exception() {
+
+    static void Test_digitCheck_exception() {
 
 		boolean result = false;
 

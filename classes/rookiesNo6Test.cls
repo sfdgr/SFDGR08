@@ -1,5 +1,5 @@
 @isTest
-private class rookiesNo5Test {
+private class rookiesNo6Test {
 
 	static testMethod void Test_getSufficientAccounts_false_01() {
 
@@ -7,7 +7,7 @@ private class rookiesNo5Test {
 		List<Account> accountList = new List<Account>();
 
 		// 0件ならfalse
-		result = rookiesNo5_TestDataFactory.getSufficientAccounts(accountList);
+		result = rookiesNo6.getSufficientAccounts(accountList);
 		System.assertEquals(false, result);
 
 	}
@@ -18,10 +18,10 @@ private class rookiesNo5Test {
 		List<Account> accountList = new List<Account>();
 
 		// メソッドを呼び出すが、0件で指定
-		accountList = TestDataFactory.createAccounts(0);
+		accountList = rookiesNo6_TestDataFactory.createAccounts(0);
 		Insert accountList;
 
-		result = rookiesNo5_TestDataFactory.getSufficientAccounts(accountList);
+		result = rookiesNo6.getSufficientAccounts(accountList);
 		System.assertEquals(false, result);
 
 	}
@@ -32,10 +32,10 @@ private class rookiesNo5Test {
 		List<Account> accountList = new List<Account>();
 
 		// 境界値・無効値
-		accountList = TestDataFactory.createAccounts(500);
+		accountList = rookiesNo6_TestDataFactory.createAccounts(500);
 		Insert accountList;
 
-		result = rookiesNo5_TestDataFactory.getSufficientAccounts(accountList);
+		result = rookiesNo6.getSufficientAccounts(accountList);
 		System.assertEquals(false, result);
 
 	}
@@ -46,10 +46,10 @@ private class rookiesNo5Test {
 		List<Account> accountList = new List<Account>();
 
 		// 境界値・有効値
-		accountList = TestDataFactory.createAccounts(501);
+		accountList = rookiesNo6_TestDataFactory.createAccounts(501);
 		Insert accountList;
 
-		result = rookiesNo5_TestDataFactory.getSufficientAccounts(accountList);
+		result = rookiesNo6.getSufficientAccounts(accountList);
 		System.assertEquals(true, result);
 
 	}

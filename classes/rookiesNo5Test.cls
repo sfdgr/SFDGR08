@@ -13,9 +13,9 @@ private class rookiesNo5Test {
 	@isTest
 	static void errorTest() {
 
-		try{
-			RookiesNo5.createAccount('')
-		} catch(DmlException de){
+		try {
+			rookiesNo5.createAccount('');
+		} catch(DmlException de) {
 			return;
 		}
 		System.assert(true);
