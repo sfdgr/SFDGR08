@@ -1,7 +1,7 @@
 @isTest
 private class rookiesNo4Test {
 
-    @isTest
+	@isTest
 	static void Test_getAccountById_blank() {
 
 		Account targetAccount = null;
@@ -9,7 +9,7 @@ private class rookiesNo4Test {
 
 	}
 
-    @isTest
+	@isTest
 	static void Test_getAccountById_isNotBlank() {
 
 		Account targetAccount = null;

@@ -1,7 +1,7 @@
 @isTest
 private class rookiesNo1Test {
 
-    @isTest
+	@isTest
 	static void Test_digitCheck_nonprompt() {
 
 		rookiesNo1.digitCheck(0);
