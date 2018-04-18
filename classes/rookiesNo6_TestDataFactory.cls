@@ -1,5 +1,5 @@
 @isTest
-public with sharing class rookiesNo5_TestDataFactory {
+public with sharing class rookiesNo6_TestDataFactory {
 
 	public static List<Account> createAccounts(Integer count) {
 

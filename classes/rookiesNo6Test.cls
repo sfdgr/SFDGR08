@@ -1,7 +1,8 @@
 @isTest
 private class rookiesNo6Test {
 
-	static testMethod void Test_getSufficientAccounts_false_01() {
+	@isTest
+	static void Test_getSufficientAccounts_false_01() {
 
 		boolean result = false;
 		List<Account> accountList = new List<Account>();
@@ -12,7 +13,8 @@ private class rookiesNo6Test {
 
 	}
 
-	static testMethod void Test_getSufficientAccounts_false_02() {
+	@isTest
+	static void Test_getSufficientAccounts_false_02() {
 
 		boolean result = false;
 		List<Account> accountList = new List<Account>();
@@ -26,7 +28,8 @@ private class rookiesNo6Test {
 
 	}
 
-	static testMethod void Test_getSufficientAccounts_false_03() {
+	@isTest
+	static void Test_getSufficientAccounts_false_03() {
 
 		boolean result = false;
 		List<Account> accountList = new List<Account>();
@@ -40,7 +43,8 @@ private class rookiesNo6Test {
 
 	}
 
-	static testMethod void Test_getSufficientAccounts_true() {
+	@isTest
+	static void Test_getSufficientAccounts_true() {
 
 		boolean result = false;
 		List<Account> accountList = new List<Account>();

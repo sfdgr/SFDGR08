@@ -1,6 +1,7 @@
 @isTest
 private class rookiesNo2Test {
 
+    @isTest
     static void Test_digitCheck_nonprompt() {
 
 		boolean result = false;
@@ -23,6 +24,7 @@ private class rookiesNo2Test {
 
 	}
 
+    @isTest
     static void Test_digitCheck_exception() {
 
 		boolean result = false;

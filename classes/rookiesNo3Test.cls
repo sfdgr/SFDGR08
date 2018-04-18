@@ -1,6 +1,7 @@
 @isTest
 private class rookiesNo3Test {
 
+    @isTest
 	static void Test_getAccounts_ok() {
 
 		List<Account> accountList = new List<Account>();
